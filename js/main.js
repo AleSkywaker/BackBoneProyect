@@ -4,8 +4,8 @@
 // files and modules.
 $(document).ready(function(){
     var todoItems = new TodoItems([
-        new TodoItem({description: "Blade Runner"}),
-        new TodoItem({description: "Alien El Regreso"})
+        new TodoItem({description: "Vacaciones"}),
+        new TodoItem({description: "Leer"})
     ]);
 
     var todoItemsView = new TodoItemsView({model : todoItems});
