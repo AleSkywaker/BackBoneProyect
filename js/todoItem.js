@@ -2,7 +2,8 @@ var TodoItem = Backbone.Model.extend({
     defaults:{
         completada:false
     },
-    url: "fakeUrl",
+    /* url: "fakeUrl", */
+    urlRoot:"http://localhost:3000/todos",
     
     validate: function(attrs){
         if(!attrs.description)
