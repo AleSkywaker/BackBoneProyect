@@ -8,6 +8,10 @@ var TodoItemsView = Backbone.View.extend({
             throw new Error('No hay ningun modelo especificado!! mensaje enviado desde todoItemsView');
 
         this.model.on("add", this.onAddTodoItem, this);
+        this.model.on("remove", this.onRemoveTodoItem, this);
+    },
+    onRemoveTodoItem:function(todoItem){
+        this.$("li#" + todoItem.id).remove();
     },
     onAddTodoItem: function(todoItem){
         var view = new TodoItemView({model: todoItem});
