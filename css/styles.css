@@ -1,6 +1,7 @@
 
 body {
 	padding: 40px;
+	background: lightseagreen;
 }
 body, p { font-size: 24px; }
 
@@ -10,20 +11,28 @@ body, p { font-size: 24px; }
 	border-left: 1px solid #ccc;
 	padding-left: 0px;
 	margin-top: 0px;
+	background: white;
 }
 #todoItems > li {
 	padding: 10px;
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
+#todoItems > li > label{
+	width: 80%;
+	display: inline-block;
+}
 #todoItems > li > #delete{
 	float: right;
+	border:0;
 	border-radius:4px;
 	background-color: red;
 	color: white;
 }
-#todoItems li.tareaCompletada{
-	text-decoration: line-through;	
+#todoItems li.tareaCompletada > label{
+	text-decoration: line-through;
+	font-style: italic;
+	color: grey;	
 }
 #newTodoItem{
 	padding:10px;
@@ -33,4 +42,5 @@ body, p { font-size: 24px; }
 #todoItemsContainer{
 	width: 55%;
 	margin: 0 auto;
+	
 }

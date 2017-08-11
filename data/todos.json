@@ -2,18 +2,23 @@
   "todos": [
     {
       "description": "Andar",
-      "completada": true,
+      "completada": false,
       "id": 5
     },
     {
       "description": "Nadar",
-      "completada": true,
+      "completada": false,
       "id": 9
     },
     {
       "description": "Bucear",
-      "completada": true,
+      "completada": false,
       "id": 10
+    },
+    {
+      "description": "Pescar",
+      "completada": false,
+      "id": 11
     }
   ]
 }
