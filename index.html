@@ -28,9 +28,16 @@
         <script src="js/main.js"></script>
 
         <script type="text/html" id="todoItemTemplate">
+            <label>
         <input type="checkbox"  {{#completada}}checked{{/completada}} id="toggle"></input>
-        {{description}}
+        {{description}}</label>
         <button id='delete'>Borrar</button>
         </script>
+
+        <script type="text/html" id="todoItemsTemplate">
+            <input type="text" autofoucs id='newTodoItem' placeholder='¿Alguna tarea pendiente?'></input>
+            <button id="add">Añadir</button>
+            <ul id="todoItems"></ul>
+            </script>
     </body>
 </html>

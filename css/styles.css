@@ -4,12 +4,17 @@ body {
 }
 body, p { font-size: 24px; }
 
-#todoitems li.tareaCompletada{
+#todoItems{
+	list-style: none;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	padding-left: 0px;
+}
+#todoItems > li {
+	padding: 10px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+#todoItems li.tareaCompletada{
 	text-decoration: line-through;	
-}
-#todoitems li button{
-	margin-left: 3%;
-}
-li{
-    list-style: none;
 }
