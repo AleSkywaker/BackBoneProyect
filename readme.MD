@@ -4,8 +4,8 @@ Este proyecto fue creado por Alex Colombo.
 
 ## Para ver este proyecto
 
-Primero entra dentro de la carpeta "data" y ejecuta desde un terminal el comando `json-server --watch todos.json`, 
-(debes tener instalado json.server) una vez hecho esto, puedes abrir en cualquier navegador el archivo `index.html`, para jugar con la aplicación.
+Primero clona los archivos, luego entra dentro de la carpeta "data" y ejecuta el comando `json-server --watch todos.json` desde un terminal, 
+(debes tener instalado json.server de manera global) una vez hecho esto, puedes abrir en cualquier navegador el archivo `index.html` para jugar con la aplicación.
 
 
 ## Para instalar Json-server en caso que no lo tengas
