@@ -32,8 +32,13 @@ var TodoItemView = Backbone.View.extend({
         this.$el.attr("id", this.model.id)
         this.$el.toggleClass("tareaCompletada", this.model.get("completada"));
 
-        var checked = this.model.get('completada') ? "checked" : "";
-        this.$el.html("<input id='toggle' type='checkbox' " + checked + "></input>" + this.model.escape("description") + "<button id='delete'>Borrar</button>");
+        var template = $("#todoItemTemplate").html();
+        var html = Mustache.render(template, this.model.toJSON());
+        this.$el.html(html);
+
+        /* var checked = this.model.get('completada') ? "checked" : "";
+        this.$el.html("<input id='toggle' type='checkbox' " + checked 
+        + "></input>" + this.model.escape("description") + "<button id='delete'>Borrar</button>"); */
         return this;
     }
 })

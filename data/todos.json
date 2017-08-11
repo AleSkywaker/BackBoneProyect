@@ -1,14 +1,6 @@
 {
   "todos": [
     {
-      "id": 2,
-      "description": "Correr"
-    },
-    {
-      "id": 3,
-      "description": "Leer"
-    },
-    {
       "description": "Andar",
       "completada": false,
       "id": 5
@@ -27,6 +19,11 @@
       "description": "Escribir",
       "completada": false,
       "id": 11
+    },
+    {
+      "description": "Correr",
+      "completada": false,
+      "id": 12
     }
   ]
 }
