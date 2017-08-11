@@ -15,7 +15,7 @@ var TodoItemsView = Backbone.View.extend({
     },
     onAddTodoItem: function(todoItem){
         var view = new TodoItemView({model: todoItem});
-        this.$el.prepend(view.render().$el);
+        this.$el.append(view.render().$el);
     },
     events:{
         "click #add": "onClickAdd",
@@ -30,6 +30,7 @@ var TodoItemsView = Backbone.View.extend({
         var $textBox = this.$("#newTodoItem");
         if($textBox.val()){
         var todoItem = new TodoItem({ description : $textBox.val()});
+        todoItem.save();
         this.model.add(todoItem);
         $textBox.val("");
         }
@@ -38,12 +39,13 @@ var TodoItemsView = Backbone.View.extend({
     render:function(){
         var self = this;
 
+        this.$el.append("<input type='text' autofocus id='newTodoItem' placeholder='¿Que tarea tienes?'></input>" )
+        this.$el.append("<button id='add'>Añadir</button>");
+
         this.model.each(function(todoItem){
             var view = new TodoItemView({model:todoItem});
             self.$el.append(view.render().$el);
         });
-        this.$el.append("<input type='text' autofocus id='newTodoItem' placeholder='¿Que tarea tienes?'></input>" )
-        this.$el.append("<button id='add'>Añadir</button>");
 
         return this;
     }

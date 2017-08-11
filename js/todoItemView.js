@@ -25,6 +25,7 @@ var TodoItemView = Backbone.View.extend({
         //SIMPLEMENTE LLAMAMOS LA FUNCION 
         
         this.model.toggle();
+        this.model.save();
         console.log(this.model.toJSON());
     },
     render: function () {
