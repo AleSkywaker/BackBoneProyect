@@ -2,28 +2,18 @@
   "todos": [
     {
       "description": "Andar",
-      "completada": false,
+      "completada": true,
       "id": 5
     },
     {
-      "description": "Bucear",
-      "completada": false,
-      "id": 8
-    },
-    {
       "description": "Nadar",
-      "completada": false,
+      "completada": true,
       "id": 9
     },
     {
-      "description": "Escribir",
-      "completada": false,
-      "id": 11
-    },
-    {
-      "description": "Correr",
-      "completada": false,
-      "id": 12
+      "description": "Bucear",
+      "completada": true,
+      "id": 10
     }
   ]
 }
